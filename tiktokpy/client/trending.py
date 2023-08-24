@@ -43,7 +43,7 @@ class Trending:
 
         try:
             while len(result) < amount:
-                if len(result) != 0:
+                if result:
                     timeout = random.randint(5, 10)  # noqa: S311
                     logger.info(
                         "⌛️ Waiting for {timeout} seconds",
